@@ -1,22 +1,48 @@
-.row {
-   
-margin-left: 15%;
-margin-right: 15%;
-    
+
+
+.gallery-container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center the gallery */
+    margin: 20px; /* Optional: Margin around the container */
 }
 
-.column {
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+    grid-gap: 50px; /* Space between grid items */
+    margin: 0; /* Remove margin to avoid extra space */
+    width: 100%; /* Full width of the parent container */
+    max-width: 1300px; /* Set a maximum width to control size */
+}
+
+.image-item {
+    display: flex; /* Use flexbox for centering images within each item */
+    justify-content: center; /* Center images horizontally */
+    align-items: center; /* Center images vertically */
+}
+
+.image-item img {
+    max-width: 100%; /* Ensure images scale within their container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.portfolio {
+    text-align: center;
+} 
+
+header {
     display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5%;
+    align-items: center;
+    justify-content: space-between;
 }
-.column img {
-    display:flex;
-    flex: 33.33%;
-    max-width: 28%;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
+
+nav ul li{
+    display: inline;
+   
 }
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+
