@@ -1,4 +1,8 @@
 
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
 
 .gallery-container {
     display: flex; /* Use flexbox */
@@ -24,25 +28,80 @@
 .image-item img {
     max-width: 100%; /* Ensure images scale within their container */
     height: auto; /* Maintain aspect ratio */
+    transition: filter 0.3s ease;
 }
+
+.image-item img:hover {
+    filter: brightness(50%)
+}
+
 
 .portfolio {
     text-align: center;
+    
 } 
 
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 3em 0em;
+
 }
 
 nav ul li{
     display: inline;
+    margin: 0em 3em;
    
+}
+.logo {
+    margin-left: 4em;
 }
 
 nav ul li a{
     color: black;
     text-decoration: none;
+    font-size: 1.5vw;
+}
+.banner {
+    margin: 0px;
+    border: 0px;
 }
 
+h1 {
+    font-family: 'Quicksand';
+    font-weight: 300;
+    font-size: 4vw;
+    letter-spacing: .15em;
+}
+
+.mid-seperator {
+    margin-bottom: 7em;
+    margin-top: 4em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15em;
+    margin-bottom: 5em;
+}
+
+footer nav ul {
+    display: flex; 
+    justify-content: center; 
+    padding: 0; 
+    margin: 0; 
+}
+
+footer nav ul li a {
+    font-size: 1.5vw;
+    
+    
+    
+}
+footer nav ul li {
+    border: 2px solid;
+    padding: 10px;
+    min-width: 6em;
+    margin: 0em 6em;
+}
